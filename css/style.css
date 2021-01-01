@@ -1,0 +1,277 @@
+header{
+    height:70px;
+    width: 200px;
+    background-color: rgb(255, 255, 255);
+    margin-left: 0%;
+    padding:0;
+    position: fixed;
+    z-index: 100;
+}
+
+p{
+    margin: 0px;
+}
+
+h1{
+    margin: 0;
+    padding: 0;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+}
+
+h5,h6{
+    text-align: left;
+    margin-top: 20px;
+}
+
+.row{
+    margin-top: 0px;
+    padding: 50px;
+    width: 70%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.under_c_icon{
+    height: 100px;
+    width: 100px;
+    position: fixed;
+    z-index: 1000;
+    top: 82%;
+    right: 3%;
+}
+
+@media only screen and (max-width: 768px){
+    .row{
+        width: 100%;
+    }
+
+    h5{
+        text-align: center;
+    }
+
+    .under_c_icon{
+        height: 55px;
+        width: 55px;
+        right: 2%;
+	top: 84%;
+    }
+}
+
+.introduce{
+    font-size: 22px;
+    color: rgb(148, 148, 148);
+    text-align: left;
+    margin-top: 10px;
+}
+
+.desc{
+    font-size: 20px;
+    color: rgb(148, 148, 148);
+    text-align: left;
+    margin-top: 10px;
+}
+
+.ph6{
+    font-size: 18px;
+    color: rgb(148, 148, 148);
+    text-align: left;
+    margin-top: 10px;
+}
+
+.profile-pic{
+    height: 13vw;
+    border-radius: 50%;
+}
+
+body{
+    background-color: rgb(250, 250, 250);
+}
+
+a:hover{
+    text-decoration: none;
+}
+
+.heading{
+    color: #ffbf00;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+.bigText{
+    font-size: 70px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.job{
+    color: rgb(248, 248, 248);
+    font-size: 20px;
+    margin-bottom: 17px;
+}
+
+#social{
+    font-size: 30px;
+    margin-top: 100px;
+}
+
+#social a{
+    text-decoration: none;
+}
+
+#social i{
+    margin: 10px;
+    color: rgb(255, 255, 255);
+    transition: 0.5s;
+}
+
+#social i:hover{
+    color: rgb(243, 119, 177);
+}
+
+.content{
+    padding-top: 15%;
+    padding-bottom: 2%;
+}
+
+.content-about{
+    padding-top: 10%;
+    background-color: white;
+}
+
+.content-resume{
+    padding-top: 10%;
+    background-color: rgb(233, 233, 233);
+}
+
+.logo{
+    left: 500px;
+    height: 68px;
+}
+
+#logo-container{
+    float: right;
+}
+
+#footer {
+    background-color: #00061a;
+    color: white;
+    font-size: 24px;
+    padding: 50px;
+    font-family: 'Big Shoulders Display', cursive;
+}
+
+#menu-container{
+    margin: 27px;
+    float: left;
+    width: 10px;
+}
+
+#menu ul li{
+    list-style-type: none;
+    text-align: left;
+    margin-top: 15px;
+}
+
+#menu ul li a{
+    height: 20px;
+    width: 200px;
+    text-align: left;
+    color:rgb(22, 22, 22);
+    font-size: 14px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-weight: bold;
+    transition: 0.2s;
+    position: relative;
+}
+
+#menu ul li a:hover{
+    color: rgb(255, 14, 147);
+    margin-left: 10px;
+    text-decoration: none;
+}
+
+#intro{
+    background-image: url("../images/intro-bg.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+    background-position-x: 50%;
+    background-position-y: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+}
+
+#toggle {
+    display: block;
+    width: 28px;
+    height: 30px;
+    padding: 3px;
+  }
+  
+  #toggle span:after,
+  #toggle span:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: -9px;
+  }
+  #toggle span:after{
+    top: 9px;
+  }
+  #toggle span {
+    position: relative;
+    display: block;
+  }
+  
+  #toggle span,
+  #toggle span:after,
+  #toggle span:before {
+    width: 100%;
+    height: 3px;
+    background-color: rgb(255, 14, 147);
+    transition: all 0.3s;
+    backface-visibility: hidden;
+    border-radius: 2px;
+  }
+  
+  /* on activation */
+  #toggle.on span {
+    background-color: transparent;
+  }
+  #toggle.on span:before {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+  #toggle.on span:after {
+    transform: rotate(-45deg) translate(7px, -8px);
+  }
+  #toggle.on + #menu {
+      transition: 0.5s;
+      height: 120px;
+    opacity: 1;
+    visibility: visible;
+  }
+  
+  /* menu appearance*/
+  #menu {
+    overflow: hidden;
+    position: relative;
+    color: #999;
+    width: 200px;
+    height: 0px;
+    padding: 10px;
+    font-family: "Segoe UI", Candara, "Bitstream Vera Sans", "DejaVu Sans", "Bitstream Vera Sans", "Trebuchet MS", Verdana, "Verdana Ref", sans-serif;
+    text-align: center;
+    background: white;
+    /* just for this demo */
+    opacity: 0;
+    visibility: hidden;
+    transition:  0.5s;
+    left: -27px;
+  }
+  #menu:after {
+    position: relative;
+    display: block;
+  }
